@@ -1,0 +1,786 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SvW-kf-LIg">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="potterFont.ttf">
+            <string>ParryHotter</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="0U7-28-adm">
+            <objects>
+                <navigationController id="SvW-kf-LIg" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xd4-QI-0hA">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="fDa-xr-fPb"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NAw-yZ-Ct0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-782" y="134"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainVC" customModule="Harry_Potter_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg2" translatesAutoresizingMaskIntoConstraints="NO" id="9Nf-ac-X5C">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ogy-Xj-8AA">
+                                <rect key="frame" x="0.0" y="418.5" width="375" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="E4j-26-vkT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ParryHotter" family="Parry Hotter" pointSize="21"/>
+                                <state key="normal" title="CHARACTERS">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="QTD-c8-odW" kind="show" id="OQC-la-XIL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yOZ-tJ-GPK">
+                                <rect key="frame" x="0.0" y="478.5" width="375" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="wm8-sO-ncv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ParryHotter" family="Parry Hotter" pointSize="21"/>
+                                <state key="normal" title="SPELLS">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="LIN-0p-hEA" kind="show" id="P8U-Zf-mLx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2eu-EV-okB">
+                                <rect key="frame" x="242" y="587" width="113" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="113" id="nEW-oC-FDM"/>
+                                    <constraint firstAttribute="height" constant="60" id="t93-rR-1T7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ParryHotter" family="Parry Hotter" pointSize="19"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="          On"/>
+                                <connections>
+                                    <action selector="musicBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sac-ie-mZg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Music:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3x-83-Xot">
+                                <rect key="frame" x="242" y="587" width="69" height="60"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="69" id="Kx6-QP-SY5"/>
+                                    <constraint firstAttribute="height" constant="60" id="vAW-n6-JQ1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ParryHotter" family="Parry Hotter" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2eu-EV-okB" secondAttribute="trailing" constant="20" id="1Ai-xY-3Ah"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yOZ-tJ-GPK" secondAttribute="trailing" id="46q-UK-Yy1"/>
+                            <constraint firstItem="9Nf-ac-X5C" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4xM-uX-zKp"/>
+                            <constraint firstItem="Ogy-Xj-8AA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="110" id="54b-re-lJM"/>
+                            <constraint firstItem="yOZ-tJ-GPK" firstAttribute="top" secondItem="Ogy-Xj-8AA" secondAttribute="bottom" constant="10" id="9WA-8d-ht8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="t3x-83-Xot" secondAttribute="bottom" constant="20" id="CW1-bw-5r0"/>
+                            <constraint firstItem="9Nf-ac-X5C" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="HV2-dw-Bp6"/>
+                            <constraint firstItem="Ogy-Xj-8AA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MLL-su-QvK"/>
+                            <constraint firstItem="9Nf-ac-X5C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ugb-C0-ejq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ogy-Xj-8AA" secondAttribute="trailing" id="Uu0-2M-A7c"/>
+                            <constraint firstItem="9Nf-ac-X5C" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="YRU-mj-CEd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2eu-EV-okB" secondAttribute="bottom" constant="20" id="bUk-F9-RcG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="t3x-83-Xot" secondAttribute="trailing" constant="64" id="ix4-jm-8ka"/>
+                            <constraint firstItem="yOZ-tJ-GPK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nH6-gL-a7D"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Main" id="For-tf-ZvC"/>
+                    <connections>
+                        <outlet property="musicBtn" destination="2eu-EV-okB" id="TS4-ok-8L9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+        <!--Spells (original)-->
+        <scene sceneID="Zn5-Bu-8Hf">
+            <objects>
+                <viewController title="Spells (original)" id="h0V-fX-oz1" customClass="SpellsVCOriginal" customModule="Harry_Potter_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ldn-Na-n2k">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg2" translatesAutoresizingMaskIntoConstraints="NO" id="hq6-6k-4Ty">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="WqK-0U-zqk">
+                                <rect key="frame" x="0.0" y="20" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iEd-UM-tw3">
+                                <rect key="frame" x="16" y="92" width="343" height="555"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SpellCell" rowHeight="50" id="c83-jO-2YS" customClass="SpellCell" customModule="Harry_Potter_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="343" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="c83-jO-2YS" id="4lm-Xb-FTJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="343" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EK6-7c-VJA">
+                                                    <rect key="frame" x="16" y="2" width="311" height="46"/>
+                                                    <fontDescription key="fontDescription" name="ParryHotter" family="Parry Hotter" pointSize="26"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="EK6-7c-VJA" secondAttribute="bottom" constant="2" id="3ny-2K-eCu"/>
+                                                <constraint firstItem="EK6-7c-VJA" firstAttribute="leading" secondItem="4lm-Xb-FTJ" secondAttribute="leading" constant="16" id="AoZ-c3-BC6"/>
+                                                <constraint firstAttribute="trailing" secondItem="EK6-7c-VJA" secondAttribute="trailing" constant="16" id="mOX-w8-FTd"/>
+                                                <constraint firstItem="EK6-7c-VJA" firstAttribute="top" secondItem="4lm-Xb-FTJ" secondAttribute="top" constant="2" id="zm4-PD-lLQ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="nameLbl" destination="EK6-7c-VJA" id="HXq-EU-79e"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iEd-UM-tw3" firstAttribute="leading" secondItem="cnG-te-p83" secondAttribute="leading" constant="16" id="FM1-rJ-sYy"/>
+                            <constraint firstItem="hq6-6k-4Ty" firstAttribute="trailing" secondItem="cnG-te-p83" secondAttribute="trailing" id="Qnd-8h-VlU"/>
+                            <constraint firstItem="WqK-0U-zqk" firstAttribute="trailing" secondItem="cnG-te-p83" secondAttribute="trailing" id="bri-hG-Uwo"/>
+                            <constraint firstItem="hq6-6k-4Ty" firstAttribute="bottom" secondItem="cnG-te-p83" secondAttribute="bottom" id="lTb-2j-1nq"/>
+                            <constraint firstItem="cnG-te-p83" firstAttribute="trailing" secondItem="iEd-UM-tw3" secondAttribute="trailing" constant="16" id="qE3-da-2pP"/>
+                            <constraint firstItem="cnG-te-p83" firstAttribute="bottom" secondItem="iEd-UM-tw3" secondAttribute="bottom" constant="20" id="qXc-oo-yqX"/>
+                            <constraint firstItem="hq6-6k-4Ty" firstAttribute="top" secondItem="cnG-te-p83" secondAttribute="top" id="r0L-o0-F4A"/>
+                            <constraint firstItem="iEd-UM-tw3" firstAttribute="top" secondItem="WqK-0U-zqk" secondAttribute="bottom" constant="16" id="rER-pN-SdK"/>
+                            <constraint firstItem="WqK-0U-zqk" firstAttribute="top" secondItem="cnG-te-p83" secondAttribute="top" id="rJ6-y2-FYs"/>
+                            <constraint firstItem="WqK-0U-zqk" firstAttribute="leading" secondItem="cnG-te-p83" secondAttribute="leading" id="yi6-5Z-lUr"/>
+                            <constraint firstItem="hq6-6k-4Ty" firstAttribute="leading" secondItem="cnG-te-p83" secondAttribute="leading" id="yl8-qt-1hM"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cnG-te-p83"/>
+                    </view>
+                    <connections>
+                        <outlet property="searchBar" destination="WqK-0U-zqk" id="ofD-dc-e33"/>
+                        <outlet property="tableView" destination="iEd-UM-tw3" id="u6S-Id-sIn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LcY-qT-TWH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-783" y="877"/>
+        </scene>
+        <!--Spells -->
+        <scene sceneID="KvY-PX-YEZ">
+            <objects>
+                <viewController title="Spells " id="LIN-0p-hEA" customClass="SpellsVC" customModule="Harry_Potter_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X7I-fR-24r">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg5" translatesAutoresizingMaskIntoConstraints="NO" id="s0N-CX-KNz">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aguamenti" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wbt-M1-Ebc">
+                                <rect key="frame" x="16" y="84" width="343" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="UCo-GR-Ted"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ParryHotter" family="Parry Hotter" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="epa-eY-kad">
+                                <rect key="frame" x="16" y="154" width="343" height="224"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="a2j-Hf-QfW">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="69.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k33-tP-G2O">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="69.5"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="TY0-7M-TtN"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ParryHotter" family="Parry Hotter" pointSize="25"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Curse" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vCs-SH-lth">
+                                                <rect key="frame" x="96" y="0.0" width="247" height="69.5"/>
+                                                <fontDescription key="fontDescription" name="ParryHotter" family="Parry Hotter" pointSize="29"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="lzM-x2-zxw">
+                                        <rect key="frame" x="0.0" y="85.5" width="343" height="138.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Effect:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4zE-9H-bxs">
+                                                <rect key="frame" x="0.0" y="0.0" width="80" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="Eev-fs-UGu"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="ParryHotter" family="Parry Hotter" pointSize="25"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kills enemy" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kf0-qa-T8i">
+                                                <rect key="frame" x="96" y="0.0" width="247" height="69.5"/>
+                                                <fontDescription key="fontDescription" name="ParryHotter" family="Parry Hotter" pointSize="29"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="a2j-Hf-QfW" firstAttribute="leading" secondItem="epa-eY-kad" secondAttribute="leading" id="2zG-Oc-Krx"/>
+                                    <constraint firstAttribute="trailing" secondItem="a2j-Hf-QfW" secondAttribute="trailing" id="lgw-Ic-Ve0"/>
+                                    <constraint firstAttribute="trailing" secondItem="lzM-x2-zxw" secondAttribute="trailing" id="yRa-F9-l1c"/>
+                                    <constraint firstItem="lzM-x2-zxw" firstAttribute="leading" secondItem="epa-eY-kad" secondAttribute="leading" id="ygH-Rg-d2G"/>
+                                </constraints>
+                            </stackView>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4EX-aC-yuF">
+                                <rect key="frame" x="16" y="417" width="343" height="210"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="210" id="UMG-8i-RPb"/>
+                                </constraints>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="s0N-CX-KNz" firstAttribute="bottom" secondItem="H52-rA-1b4" secondAttribute="bottom" id="6XH-XH-7Oe"/>
+                            <constraint firstItem="Wbt-M1-Ebc" firstAttribute="top" secondItem="H52-rA-1b4" secondAttribute="top" constant="20" id="Aj5-JX-0S8"/>
+                            <constraint firstItem="s0N-CX-KNz" firstAttribute="trailing" secondItem="H52-rA-1b4" secondAttribute="trailing" id="NKB-Dy-Odc"/>
+                            <constraint firstItem="s0N-CX-KNz" firstAttribute="leading" secondItem="H52-rA-1b4" secondAttribute="leading" id="TWE-Py-mXk"/>
+                            <constraint firstItem="epa-eY-kad" firstAttribute="leading" secondItem="H52-rA-1b4" secondAttribute="leading" constant="16" id="UUf-FV-tK4"/>
+                            <constraint firstItem="H52-rA-1b4" firstAttribute="trailing" secondItem="epa-eY-kad" secondAttribute="trailing" constant="16" id="Uv6-IJ-lQM"/>
+                            <constraint firstItem="H52-rA-1b4" firstAttribute="trailing" secondItem="Wbt-M1-Ebc" secondAttribute="trailing" constant="16" id="fhh-1s-Pt1"/>
+                            <constraint firstItem="s0N-CX-KNz" firstAttribute="top" secondItem="H52-rA-1b4" secondAttribute="top" id="hQL-wy-OKP"/>
+                            <constraint firstItem="4EX-aC-yuF" firstAttribute="leading" secondItem="H52-rA-1b4" secondAttribute="leading" constant="16" id="hfq-Ra-V6e"/>
+                            <constraint firstItem="epa-eY-kad" firstAttribute="top" secondItem="Wbt-M1-Ebc" secondAttribute="bottom" constant="30" id="kOv-eB-h2t"/>
+                            <constraint firstItem="H52-rA-1b4" firstAttribute="bottom" secondItem="4EX-aC-yuF" secondAttribute="bottom" constant="40" id="nmv-hX-7FR"/>
+                            <constraint firstItem="Wbt-M1-Ebc" firstAttribute="leading" secondItem="H52-rA-1b4" secondAttribute="leading" constant="16" id="y3q-kD-rbx"/>
+                            <constraint firstItem="H52-rA-1b4" firstAttribute="trailing" secondItem="4EX-aC-yuF" secondAttribute="trailing" constant="16" id="zpG-lm-W2r"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="H52-rA-1b4"/>
+                    </view>
+                    <connections>
+                        <outlet property="pickerView" destination="4EX-aC-yuF" id="I0r-qJ-zNG"/>
+                        <outlet property="splEffectLbl" destination="Kf0-qa-T8i" id="u7c-Qk-qmA"/>
+                        <outlet property="splNameLbl" destination="Wbt-M1-Ebc" id="JT4-rp-3Qg"/>
+                        <outlet property="splTypeLbl" destination="vCs-SH-lth" id="2qI-9W-X38"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N2G-aO-358" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="876.61169415292363"/>
+        </scene>
+        <!--Characters-->
+        <scene sceneID="E1c-S6-02k">
+            <objects>
+                <viewController title="Characters" id="QTD-c8-odW" customClass="CharactersVC" customModule="Harry_Potter_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9BP-Oq-KaE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg3" translatesAutoresizingMaskIntoConstraints="NO" id="Ccr-gZ-ih1">
+                                <rect key="frame" x="0.0" y="114" width="375" height="553"/>
+                            </imageView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="REM-o9-mmd">
+                                <rect key="frame" x="0.0" y="64" width="375" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ryb-e5-Tfv"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Hif-9Y-081">
+                                <rect key="frame" x="10" y="134" width="355" height="513"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="9sq-vk-rTY">
+                                    <size key="itemSize" width="110" height="110"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PotterCell" id="euq-U4-2pg" customClass="PotterCell" customModule="Harry_Potter_App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o7G-ql-ZnW">
+                                                    <rect key="frame" x="0.0" y="0.0" width="110" height="90"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="90" id="fre-1F-SfH"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Harry " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1yN-ca-ZSG">
+                                                    <rect key="frame" x="0.0" y="90" width="110" height="20"/>
+                                                    <fontDescription key="fontDescription" name="ParryHotter" family="Parry Hotter" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="1yN-ca-ZSG" firstAttribute="top" secondItem="o7G-ql-ZnW" secondAttribute="bottom" id="B1f-YC-f7E"/>
+                                            <constraint firstItem="o7G-ql-ZnW" firstAttribute="leading" secondItem="euq-U4-2pg" secondAttribute="leading" id="MDv-pR-n3K"/>
+                                            <constraint firstAttribute="bottom" secondItem="1yN-ca-ZSG" secondAttribute="bottom" id="WJe-mI-1l5"/>
+                                            <constraint firstItem="o7G-ql-ZnW" firstAttribute="top" secondItem="euq-U4-2pg" secondAttribute="top" id="dAR-sV-3dQ"/>
+                                            <constraint firstAttribute="trailing" secondItem="o7G-ql-ZnW" secondAttribute="trailing" id="h33-Yl-10a"/>
+                                            <constraint firstAttribute="trailing" secondItem="1yN-ca-ZSG" secondAttribute="trailing" id="s15-fR-81l"/>
+                                            <constraint firstItem="1yN-ca-ZSG" firstAttribute="leading" secondItem="euq-U4-2pg" secondAttribute="leading" id="xXC-cb-rTQ"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="characterImg" destination="o7G-ql-ZnW" id="MgV-VK-v33"/>
+                                            <outlet property="characterNameLbl" destination="1yN-ca-ZSG" id="ZvN-7e-wEQ"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ccr-gZ-ih1" firstAttribute="leading" secondItem="N6Q-o3-xvX" secondAttribute="leading" id="0xN-24-6Fg"/>
+                            <constraint firstItem="Hif-9Y-081" firstAttribute="leading" secondItem="N6Q-o3-xvX" secondAttribute="leading" constant="10" id="1Bi-Xj-29R"/>
+                            <constraint firstItem="N6Q-o3-xvX" firstAttribute="bottom" secondItem="Hif-9Y-081" secondAttribute="bottom" constant="20" id="2CO-pg-U77"/>
+                            <constraint firstItem="REM-o9-mmd" firstAttribute="leading" secondItem="N6Q-o3-xvX" secondAttribute="leading" id="2bZ-Rs-jA7"/>
+                            <constraint firstItem="Ccr-gZ-ih1" firstAttribute="top" secondItem="REM-o9-mmd" secondAttribute="bottom" id="36T-m1-sUK"/>
+                            <constraint firstItem="REM-o9-mmd" firstAttribute="top" secondItem="N6Q-o3-xvX" secondAttribute="top" id="6DV-IN-cjc"/>
+                            <constraint firstAttribute="bottom" secondItem="Ccr-gZ-ih1" secondAttribute="bottom" id="6lM-DR-JDc"/>
+                            <constraint firstItem="Hif-9Y-081" firstAttribute="top" secondItem="REM-o9-mmd" secondAttribute="bottom" constant="20" id="Pz3-Oj-HPy"/>
+                            <constraint firstItem="Ccr-gZ-ih1" firstAttribute="trailing" secondItem="N6Q-o3-xvX" secondAttribute="trailing" id="bAx-nG-xXb"/>
+                            <constraint firstItem="REM-o9-mmd" firstAttribute="trailing" secondItem="N6Q-o3-xvX" secondAttribute="trailing" id="nSP-Kz-rIa"/>
+                            <constraint firstItem="N6Q-o3-xvX" firstAttribute="trailing" secondItem="Hif-9Y-081" secondAttribute="trailing" constant="10" id="vWR-e1-aKd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="N6Q-o3-xvX"/>
+                    </view>
+                    <connections>
+                        <outlet property="collection" destination="Hif-9Y-081" id="7Q7-Ua-e8s"/>
+                        <outlet property="searchBar" destination="REM-o9-mmd" id="RAc-Zp-zZc"/>
+                        <segue destination="64F-Ij-57h" kind="show" identifier="HeroVC" id="bBy-bd-WM9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yyn-JE-OzB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="940" y="133.5832083958021"/>
+        </scene>
+        <!--Hero-->
+        <scene sceneID="7dK-pM-o4O">
+            <objects>
+                <viewController title="Hero" id="64F-Ij-57h" customClass="HeroVC" customModule="Harry_Potter_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KNL-im-TfP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg1" translatesAutoresizingMaskIntoConstraints="NO" id="Oiv-nm-36N">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aaE-F4-yQj">
+                                <rect key="frame" x="90" y="165" width="195" height="277"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hermione Granger" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ef-ge-dh4">
+                                <rect key="frame" x="8" y="72" width="359" height="50.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50.5" id="aJW-Ps-bnW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ParryHotter" family="Parry Hotter" pointSize="21"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="x8X-vf-HIy">
+                                <rect key="frame" x="8" y="127" width="359" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="OP3-O3-0vu"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Info"/>
+                                    <segment title="More"/>
+                                </segments>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="segmentedControl:" destination="64F-Ij-57h" eventType="valueChanged" id="Awb-wB-vtu"/>
+                                </connections>
+                            </segmentedControl>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nZh-Fo-jIj">
+                                <rect key="frame" x="16" y="165" width="343" height="297"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="q9E-ea-XTd">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="51.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6PM-r5-qbe">
+                                                <rect key="frame" x="0.0" y="0.0" width="166.5" height="51.5"/>
+                                                <subviews>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ancestry:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="QyB-pw-Amx">
+                                                        <rect key="frame" x="-16" y="-165" width="0.0" height="52.5"/>
+                                                        <fontDescription key="fontDescription" name="ParryHotter" family="Parry Hotter" pointSize="20"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Human" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="R8j-up-gwQ">
+                                                        <rect key="frame" x="-16" y="-165" width="0.0" height="52.5"/>
+                                                        <fontDescription key="fontDescription" name="ParryHotter" family="Parry Hotter" pointSize="22"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Mw-ke-01Q">
+                                                <rect key="frame" x="176.5" y="0.0" width="166.5" height="51.5"/>
+                                                <subviews>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alive:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="S7J-J2-CZr">
+                                                        <rect key="frame" x="-192.5" y="-165" width="0.0" height="52.5"/>
+                                                        <fontDescription key="fontDescription" name="ParryHotter" family="Parry Hotter" pointSize="20"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Human" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="pfV-6R-DVn">
+                                                        <rect key="frame" x="-192.5" y="-165" width="0.0" height="52.5"/>
+                                                        <fontDescription key="fontDescription" name="ParryHotter" family="Parry Hotter" pointSize="22"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2gr-jf-WA7">
+                                        <rect key="frame" x="0.0" y="61.5" width="343" height="51.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Go-09-t34">
+                                                <rect key="frame" x="0.0" y="0.0" width="166.5" height="51.5"/>
+                                                <subviews>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Eye Color:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="AXR-vq-iFz">
+                                                        <rect key="frame" x="-16" y="-226.5" width="0.0" height="52.5"/>
+                                                        <fontDescription key="fontDescription" name="ParryHotter" family="Parry Hotter" pointSize="20"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Human" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="0C5-ud-goT">
+                                                        <rect key="frame" x="-16" y="-226.5" width="0.0" height="52.5"/>
+                                                        <fontDescription key="fontDescription" name="ParryHotter" family="Parry Hotter" pointSize="22"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D9Q-IL-Izv">
+                                                <rect key="frame" x="176.5" y="0.0" width="166.5" height="51.5"/>
+                                                <subviews>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hair Color:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Jgb-DK-ftb">
+                                                        <rect key="frame" x="-192.5" y="-226.5" width="0.0" height="52.5"/>
+                                                        <fontDescription key="fontDescription" name="ParryHotter" family="Parry Hotter" pointSize="20"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Human" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="JTi-uP-w0g">
+                                                        <rect key="frame" x="-192.5" y="-226.5" width="0.0" height="52.5"/>
+                                                        <fontDescription key="fontDescription" name="ParryHotter" family="Parry Hotter" pointSize="22"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="rYw-qc-gJW">
+                                        <rect key="frame" x="0.0" y="123" width="343" height="51"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1nq-TI-XMl">
+                                                <rect key="frame" x="0.0" y="0.0" width="166.5" height="51"/>
+                                                <subviews>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wand Wood:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="2rn-e8-v9g">
+                                                        <rect key="frame" x="-16" y="-288" width="0.0" height="52.5"/>
+                                                        <fontDescription key="fontDescription" name="ParryHotter" family="Parry Hotter" pointSize="20"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Human" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="l2V-yM-ef2">
+                                                        <rect key="frame" x="-16" y="-288" width="0.0" height="52.5"/>
+                                                        <fontDescription key="fontDescription" name="ParryHotter" family="Parry Hotter" pointSize="22"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A1m-3g-oZ6">
+                                                <rect key="frame" x="176.5" y="0.0" width="166.5" height="51"/>
+                                                <subviews>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wand Core:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="n6g-0a-qSx">
+                                                        <rect key="frame" x="-192.5" y="-288" width="0.0" height="52.5"/>
+                                                        <fontDescription key="fontDescription" name="ParryHotter" family="Parry Hotter" pointSize="20"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Human" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="B4s-Xe-XmM">
+                                                        <rect key="frame" x="-192.5" y="-288" width="0.0" height="52.5"/>
+                                                        <fontDescription key="fontDescription" name="ParryHotter" family="Parry Hotter" pointSize="22"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Qfu-Dx-8ve">
+                                        <rect key="frame" x="0.0" y="184" width="343" height="51.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jXO-xT-koI">
+                                                <rect key="frame" x="0.0" y="0.0" width="166.5" height="51.5"/>
+                                                <subviews>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wand Length:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kVH-yh-KCi">
+                                                        <rect key="frame" x="-16" y="-349" width="0.0" height="52.5"/>
+                                                        <fontDescription key="fontDescription" name="ParryHotter" family="Parry Hotter" pointSize="20"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Human" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="GTC-2b-fFk">
+                                                        <rect key="frame" x="-16" y="-349" width="0.0" height="52.5"/>
+                                                        <fontDescription key="fontDescription" name="ParryHotter" family="Parry Hotter" pointSize="22"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gkJ-Gq-2Sk">
+                                                <rect key="frame" x="176.5" y="0.0" width="166.5" height="51.5"/>
+                                                <subviews>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Patronus:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zhP-RB-3il">
+                                                        <rect key="frame" x="-192.5" y="-349" width="0.0" height="52.5"/>
+                                                        <fontDescription key="fontDescription" name="ParryHotter" family="Parry Hotter" pointSize="20"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Human" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="86E-bS-T5j">
+                                                        <rect key="frame" x="-192.5" y="-349" width="0.0" height="52.5"/>
+                                                        <fontDescription key="fontDescription" name="ParryHotter" family="Parry Hotter" pointSize="22"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Tc8-qH-zMw">
+                                        <rect key="frame" x="0.0" y="245.5" width="343" height="51.5"/>
+                                        <subviews>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Actor:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="PU9-qn-AIx">
+                                                <rect key="frame" x="-16" y="-410.5" width="0.0" height="52.5"/>
+                                                <fontDescription key="fontDescription" name="ParryHotter" family="Parry Hotter" pointSize="20"/>
+                                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Human" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="G4L-mD-Tla">
+                                                <rect key="frame" x="-16" y="-410.5" width="0.0" height="52.5"/>
+                                                <fontDescription key="fontDescription" name="ParryHotter" family="Parry Hotter" pointSize="22"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Tc8-qH-zMw" firstAttribute="leading" secondItem="nZh-Fo-jIj" secondAttribute="leading" id="2dm-uT-yBT"/>
+                                    <constraint firstItem="rYw-qc-gJW" firstAttribute="leading" secondItem="nZh-Fo-jIj" secondAttribute="leading" id="D8J-AU-QCq"/>
+                                    <constraint firstAttribute="trailing" secondItem="Qfu-Dx-8ve" secondAttribute="trailing" id="HKC-BK-TNZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="q9E-ea-XTd" secondAttribute="trailing" id="HMS-eT-2Bq"/>
+                                    <constraint firstItem="2gr-jf-WA7" firstAttribute="leading" secondItem="nZh-Fo-jIj" secondAttribute="leading" id="VQr-CT-a9n"/>
+                                    <constraint firstAttribute="trailing" secondItem="2gr-jf-WA7" secondAttribute="trailing" id="XJm-wE-aaN"/>
+                                    <constraint firstItem="q9E-ea-XTd" firstAttribute="leading" secondItem="nZh-Fo-jIj" secondAttribute="leading" id="b5k-UC-l7V"/>
+                                    <constraint firstAttribute="trailing" secondItem="Tc8-qH-zMw" secondAttribute="trailing" id="dK6-U6-FNs"/>
+                                    <constraint firstAttribute="trailing" secondItem="rYw-qc-gJW" secondAttribute="trailing" id="dSH-6x-U6H"/>
+                                    <constraint firstItem="Qfu-Dx-8ve" firstAttribute="leading" secondItem="nZh-Fo-jIj" secondAttribute="leading" id="qTZ-ux-sBZ"/>
+                                </constraints>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="C8c-mN-6ad">
+                                <rect key="frame" x="10" y="482" width="355" height="105"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="ic2-jd-rKN">
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="52.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="irS-LK-lza">
+                                                <rect key="frame" x="0.0" y="0.0" width="162.5" height="52.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Specie:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Obj-zb-qyU">
+                                                        <rect key="frame" x="0.0" y="0.0" width="71" height="52.5"/>
+                                                        <fontDescription key="fontDescription" name="ParryHotter" family="Parry Hotter" pointSize="20"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Human" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="OfR-U7-HQx">
+                                                        <rect key="frame" x="86" y="0.0" width="76.5" height="52.5"/>
+                                                        <fontDescription key="fontDescription" name="ParryHotter" family="Parry Hotter" pointSize="22"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="wNK-u8-zDk">
+                                                <rect key="frame" x="192.5" y="0.0" width="162.5" height="52.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="259-eH-D1s">
+                                                        <rect key="frame" x="0.0" y="0.0" width="73" height="52.5"/>
+                                                        <fontDescription key="fontDescription" name="ParryHotter" family="Parry Hotter" pointSize="20"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Female" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="RS7-hu-gK7">
+                                                        <rect key="frame" x="88" y="0.0" width="74.5" height="52.5"/>
+                                                        <fontDescription key="fontDescription" name="ParryHotter" family="Parry Hotter" pointSize="22"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="nIB-e9-tJ7">
+                                        <rect key="frame" x="0.0" y="52.5" width="355" height="52.5"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="A9u-jZ-iMZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="162.5" height="52.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="House:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="OTR-FA-bnz">
+                                                        <rect key="frame" x="0.0" y="0.0" width="52.5" height="52.5"/>
+                                                        <fontDescription key="fontDescription" name="ParryHotter" family="Parry Hotter" pointSize="20"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Griffindor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Mhf-n1-8u1">
+                                                        <rect key="frame" x="67.5" y="0.0" width="95" height="52.5"/>
+                                                        <fontDescription key="fontDescription" name="ParryHotter" family="Parry Hotter" pointSize="22"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="fYp-aK-4rn">
+                                                <rect key="frame" x="192.5" y="0.0" width="162.5" height="52.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year of birth:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="LwH-fe-FGV">
+                                                        <rect key="frame" x="0.0" y="0.0" width="113.5" height="52.5"/>
+                                                        <fontDescription key="fontDescription" name="ParryHotter" family="Parry Hotter" pointSize="20"/>
+                                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1979" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Z1C-Id-eJq">
+                                                        <rect key="frame" x="128.5" y="0.0" width="34" height="52.5"/>
+                                                        <fontDescription key="fontDescription" name="ParryHotter" family="Parry Hotter" pointSize="22"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="nIB-e9-tJ7" firstAttribute="leading" secondItem="C8c-mN-6ad" secondAttribute="leading" id="Vp3-8g-rRV"/>
+                                    <constraint firstAttribute="trailing" secondItem="nIB-e9-tJ7" secondAttribute="trailing" id="Yg1-hu-rAB"/>
+                                    <constraint firstItem="ic2-jd-rKN" firstAttribute="leading" secondItem="C8c-mN-6ad" secondAttribute="leading" id="fIK-hl-9mc"/>
+                                    <constraint firstAttribute="trailing" secondItem="ic2-jd-rKN" secondAttribute="trailing" id="xVZ-gw-DVV"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="C8c-mN-6ad" firstAttribute="top" secondItem="nZh-Fo-jIj" secondAttribute="bottom" constant="20" id="523-K8-jpb"/>
+                            <constraint firstItem="x8X-vf-HIy" firstAttribute="leading" secondItem="aDz-iS-x1s" secondAttribute="leading" constant="8" id="8YA-gd-VOV"/>
+                            <constraint firstItem="aaE-F4-yQj" firstAttribute="top" secondItem="x8X-vf-HIy" secondAttribute="bottom" constant="10" id="AUK-k0-vpQ"/>
+                            <constraint firstItem="Oiv-nm-36N" firstAttribute="bottom" secondItem="aDz-iS-x1s" secondAttribute="bottom" id="AVe-PF-2Mq"/>
+                            <constraint firstItem="aDz-iS-x1s" firstAttribute="bottom" secondItem="C8c-mN-6ad" secondAttribute="bottom" constant="80" id="Bg8-Hl-Oev"/>
+                            <constraint firstItem="aDz-iS-x1s" firstAttribute="trailing" secondItem="x8X-vf-HIy" secondAttribute="trailing" constant="8" id="DIJ-a3-BC2"/>
+                            <constraint firstItem="C8c-mN-6ad" firstAttribute="top" secondItem="aaE-F4-yQj" secondAttribute="bottom" constant="40" id="FKj-oT-J8i"/>
+                            <constraint firstItem="Oiv-nm-36N" firstAttribute="trailing" secondItem="aDz-iS-x1s" secondAttribute="trailing" id="GPr-z3-Svc"/>
+                            <constraint firstItem="aDz-iS-x1s" firstAttribute="trailing" secondItem="nZh-Fo-jIj" secondAttribute="trailing" constant="16" id="GRa-wb-iWB"/>
+                            <constraint firstItem="aDz-iS-x1s" firstAttribute="trailing" secondItem="C8c-mN-6ad" secondAttribute="trailing" constant="10" id="ToB-at-mXi"/>
+                            <constraint firstItem="Oiv-nm-36N" firstAttribute="top" secondItem="aDz-iS-x1s" secondAttribute="top" id="Y7E-75-q4O"/>
+                            <constraint firstItem="aDz-iS-x1s" firstAttribute="trailing" secondItem="2ef-ge-dh4" secondAttribute="trailing" constant="8" id="ZpJ-3j-wZx"/>
+                            <constraint firstItem="Oiv-nm-36N" firstAttribute="leading" secondItem="aDz-iS-x1s" secondAttribute="leading" id="bsZ-df-bsR"/>
+                            <constraint firstItem="nZh-Fo-jIj" firstAttribute="leading" secondItem="aDz-iS-x1s" secondAttribute="leading" constant="16" id="dKg-z9-jIa"/>
+                            <constraint firstItem="x8X-vf-HIy" firstAttribute="top" secondItem="2ef-ge-dh4" secondAttribute="bottom" constant="5" id="der-E6-d8K"/>
+                            <constraint firstItem="C8c-mN-6ad" firstAttribute="leading" secondItem="aDz-iS-x1s" secondAttribute="leading" constant="10" id="faV-gV-jt2"/>
+                            <constraint firstItem="2ef-ge-dh4" firstAttribute="top" secondItem="aDz-iS-x1s" secondAttribute="top" constant="8" id="hAv-xX-6Gr"/>
+                            <constraint firstItem="aaE-F4-yQj" firstAttribute="leading" secondItem="aDz-iS-x1s" secondAttribute="leading" constant="90" id="kq3-cT-jqc"/>
+                            <constraint firstItem="nZh-Fo-jIj" firstAttribute="top" secondItem="x8X-vf-HIy" secondAttribute="bottom" constant="10" id="mz7-2E-YhQ"/>
+                            <constraint firstItem="aDz-iS-x1s" firstAttribute="trailing" secondItem="aaE-F4-yQj" secondAttribute="trailing" constant="90" id="pKX-wD-d2i"/>
+                            <constraint firstItem="2ef-ge-dh4" firstAttribute="leading" secondItem="aDz-iS-x1s" secondAttribute="leading" constant="8" id="uX6-35-qx8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aDz-iS-x1s"/>
+                    </view>
+                    <connections>
+                        <outlet property="Lbl1" destination="QyB-pw-Amx" id="Erl-dR-p11"/>
+                        <outlet property="Lbl2" destination="S7J-J2-CZr" id="hnv-Lr-JfM"/>
+                        <outlet property="Lbl3" destination="AXR-vq-iFz" id="VGm-RM-vTt"/>
+                        <outlet property="Lbl4" destination="Jgb-DK-ftb" id="nH8-cx-OuI"/>
+                        <outlet property="Lbl5" destination="2rn-e8-v9g" id="tj1-Nj-OV2"/>
+                        <outlet property="Lbl6" destination="n6g-0a-qSx" id="XRo-lZ-i0f"/>
+                        <outlet property="Lbl7" destination="kVH-yh-KCi" id="6qc-c6-jLG"/>
+                        <outlet property="Lbl8" destination="zhP-RB-3il" id="bud-tc-DG1"/>
+                        <outlet property="Lbl9" destination="PU9-qn-AIx" id="Ush-mY-K9t"/>
+                        <outlet property="actorLbl" destination="G4L-mD-Tla" id="6CV-bR-2EH"/>
+                        <outlet property="aliveLbl" destination="pfV-6R-DVn" id="tZb-Iq-ltv"/>
+                        <outlet property="ancestryLbl" destination="R8j-up-gwQ" id="8y6-oc-nL0"/>
+                        <outlet property="eyeColorLbl" destination="0C5-ud-goT" id="GpX-pO-9a6"/>
+                        <outlet property="hairColorLbl" destination="JTi-uP-w0g" id="bZp-kf-URF"/>
+                        <outlet property="heroBirthYearLbl" destination="Z1C-Id-eJq" id="N7j-GS-kl4"/>
+                        <outlet property="heroGenderLbl" destination="RS7-hu-gK7" id="UBO-Fm-EDO"/>
+                        <outlet property="heroHouseLbl" destination="Mhf-n1-8u1" id="qBG-en-Fvc"/>
+                        <outlet property="heroImg" destination="aaE-F4-yQj" id="FuP-KA-Cmw"/>
+                        <outlet property="heroNameLbl" destination="2ef-ge-dh4" id="moB-w5-FZN"/>
+                        <outlet property="heroSpecieLbl" destination="OfR-U7-HQx" id="UPz-7e-Epy"/>
+                        <outlet property="patronusLbl" destination="86E-bS-T5j" id="vb9-Wn-hYP"/>
+                        <outlet property="segment" destination="x8X-vf-HIy" id="349-hk-EIK"/>
+                        <outlet property="wandCoreLbl" destination="B4s-Xe-XmM" id="UVB-h6-0zL"/>
+                        <outlet property="wandLengthLbl" destination="GTC-2b-fFk" id="IQX-qP-4F8"/>
+                        <outlet property="wandWoodLbl" destination="l2V-yM-ef2" id="Iv2-Ig-wOR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ggy-tr-hkV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1725.5999999999999" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg1" width="750" height="1334"/>
+        <image name="bg2" width="750" height="1334"/>
+        <image name="bg3" width="750" height="1334"/>
+        <image name="bg5" width="539" height="960"/>
+    </resources>
+</document>

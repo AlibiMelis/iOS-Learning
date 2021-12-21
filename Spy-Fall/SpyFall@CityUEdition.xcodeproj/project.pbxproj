@@ -1,0 +1,663 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		414F75C0242E1E1E00855F1D /* myButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414F75BF242E1E1E00855F1D /* myButton.swift */; };
+		41AE3600242D7B1D00FAFD9D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AE35FF242D7B1D00FAFD9D /* AppDelegate.swift */; };
+		41AE3602242D7B1D00FAFD9D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AE3601242D7B1D00FAFD9D /* SceneDelegate.swift */; };
+		41AE3607242D7B1D00FAFD9D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41AE3605242D7B1D00FAFD9D /* Main.storyboard */; };
+		41AE360C242D7B2400FAFD9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41AE360A242D7B2400FAFD9D /* LaunchScreen.storyboard */; };
+		41AE3617242D7B2400FAFD9D /* SpyFall_CityUEditionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AE3616242D7B2400FAFD9D /* SpyFall_CityUEditionTests.swift */; };
+		41AE3622242D7B2400FAFD9D /* SpyFall_CityUEditionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AE3621242D7B2400FAFD9D /* SpyFall_CityUEditionUITests.swift */; };
+		41AE3634242D7BAE00FAFD9D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AE3633242D7BAE00FAFD9D /* MainViewController.swift */; };
+		41AE3636242D803D00FAFD9D /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AE3635242D803D00FAFD9D /* GameViewController.swift */; };
+		41AE3638242D879500FAFD9D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AE3637242D879500FAFD9D /* SettingsViewController.swift */; };
+		41AE363A242D9A6000FAFD9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41AE3639242D9A6000FAFD9D /* Assets.xcassets */; };
+		41AE363C242DA8CC00FAFD9D /* Games.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AE363B242DA8CC00FAFD9D /* Games.swift */; };
+		41AE363F242DB33C00FAFD9D /* DB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AE363E242DB33C00FAFD9D /* DB.swift */; };
+		41AE3641242DBA8900FAFD9D /* Players.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AE3640242DBA8900FAFD9D /* Players.swift */; };
+		41AE3643242DC5E200FAFD9D /* Locations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AE3642242DC5E200FAFD9D /* Locations.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		41AE3613242D7B2400FAFD9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41AE35F4242D7B1D00FAFD9D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41AE35FB242D7B1D00FAFD9D;
+			remoteInfo = "SpyFall@CityUEdition";
+		};
+		41AE361E242D7B2400FAFD9D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41AE35F4242D7B1D00FAFD9D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41AE35FB242D7B1D00FAFD9D;
+			remoteInfo = "SpyFall@CityUEdition";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		414F75BF242E1E1E00855F1D /* myButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myButton.swift; sourceTree = "<group>"; };
+		41AE35FC242D7B1D00FAFD9D /* SpyFall@CityUEdition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SpyFall@CityUEdition.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41AE35FF242D7B1D00FAFD9D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		41AE3601242D7B1D00FAFD9D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		41AE3606242D7B1D00FAFD9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		41AE360B242D7B2400FAFD9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		41AE360D242D7B2400FAFD9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41AE3612242D7B2400FAFD9D /* SpyFall@CityUEditionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SpyFall@CityUEditionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41AE3616242D7B2400FAFD9D /* SpyFall_CityUEditionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyFall_CityUEditionTests.swift; sourceTree = "<group>"; };
+		41AE3618242D7B2400FAFD9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41AE361D242D7B2400FAFD9D /* SpyFall@CityUEditionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SpyFall@CityUEditionUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41AE3621242D7B2400FAFD9D /* SpyFall_CityUEditionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyFall_CityUEditionUITests.swift; sourceTree = "<group>"; };
+		41AE3623242D7B2400FAFD9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41AE3633242D7BAE00FAFD9D /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		41AE3635242D803D00FAFD9D /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		41AE3637242D879500FAFD9D /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		41AE3639242D9A6000FAFD9D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		41AE363B242DA8CC00FAFD9D /* Games.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Games.swift; sourceTree = "<group>"; };
+		41AE363E242DB33C00FAFD9D /* DB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DB.swift; sourceTree = "<group>"; };
+		41AE3640242DBA8900FAFD9D /* Players.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Players.swift; sourceTree = "<group>"; };
+		41AE3642242DC5E200FAFD9D /* Locations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Locations.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		41AE35F9242D7B1D00FAFD9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41AE360F242D7B2400FAFD9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41AE361A242D7B2400FAFD9D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		41AE35F3242D7B1D00FAFD9D = {
+			isa = PBXGroup;
+			children = (
+				41AE35FE242D7B1D00FAFD9D /* SpyFall@CityUEdition */,
+				41AE3615242D7B2400FAFD9D /* SpyFall@CityUEditionTests */,
+				41AE3620242D7B2400FAFD9D /* SpyFall@CityUEditionUITests */,
+				41AE35FD242D7B1D00FAFD9D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		41AE35FD242D7B1D00FAFD9D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				41AE35FC242D7B1D00FAFD9D /* SpyFall@CityUEdition.app */,
+				41AE3612242D7B2400FAFD9D /* SpyFall@CityUEditionTests.xctest */,
+				41AE361D242D7B2400FAFD9D /* SpyFall@CityUEditionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		41AE35FE242D7B1D00FAFD9D /* SpyFall@CityUEdition */ = {
+			isa = PBXGroup;
+			children = (
+				41AE363D242DB32A00FAFD9D /* Constants */,
+				41AE362F242D7B3E00FAFD9D /* Model */,
+				41AE3630242D7B4600FAFD9D /* View */,
+				41AE3631242D7B4F00FAFD9D /* Controller */,
+				41AE3605242D7B1D00FAFD9D /* Main.storyboard */,
+				41AE3632242D7B7C00FAFD9D /* Utilities */,
+			);
+			path = "SpyFall@CityUEdition";
+			sourceTree = "<group>";
+		};
+		41AE3615242D7B2400FAFD9D /* SpyFall@CityUEditionTests */ = {
+			isa = PBXGroup;
+			children = (
+				41AE3616242D7B2400FAFD9D /* SpyFall_CityUEditionTests.swift */,
+				41AE3618242D7B2400FAFD9D /* Info.plist */,
+			);
+			path = "SpyFall@CityUEditionTests";
+			sourceTree = "<group>";
+		};
+		41AE3620242D7B2400FAFD9D /* SpyFall@CityUEditionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				41AE3621242D7B2400FAFD9D /* SpyFall_CityUEditionUITests.swift */,
+				41AE3623242D7B2400FAFD9D /* Info.plist */,
+			);
+			path = "SpyFall@CityUEditionUITests";
+			sourceTree = "<group>";
+		};
+		41AE362F242D7B3E00FAFD9D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				41AE363B242DA8CC00FAFD9D /* Games.swift */,
+				41AE3640242DBA8900FAFD9D /* Players.swift */,
+				41AE3642242DC5E200FAFD9D /* Locations.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		41AE3630242D7B4600FAFD9D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				414F75BF242E1E1E00855F1D /* myButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		41AE3631242D7B4F00FAFD9D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				41AE3633242D7BAE00FAFD9D /* MainViewController.swift */,
+				41AE3637242D879500FAFD9D /* SettingsViewController.swift */,
+				41AE3635242D803D00FAFD9D /* GameViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		41AE3632242D7B7C00FAFD9D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				41AE3639242D9A6000FAFD9D /* Assets.xcassets */,
+				41AE35FF242D7B1D00FAFD9D /* AppDelegate.swift */,
+				41AE3601242D7B1D00FAFD9D /* SceneDelegate.swift */,
+				41AE360D242D7B2400FAFD9D /* Info.plist */,
+				41AE360A242D7B2400FAFD9D /* LaunchScreen.storyboard */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		41AE363D242DB32A00FAFD9D /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				41AE363E242DB33C00FAFD9D /* DB.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		41AE35FB242D7B1D00FAFD9D /* SpyFall@CityUEdition */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41AE3626242D7B2400FAFD9D /* Build configuration list for PBXNativeTarget "SpyFall@CityUEdition" */;
+			buildPhases = (
+				41AE35F8242D7B1D00FAFD9D /* Sources */,
+				41AE35F9242D7B1D00FAFD9D /* Frameworks */,
+				41AE35FA242D7B1D00FAFD9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SpyFall@CityUEdition";
+			productName = "SpyFall@CityUEdition";
+			productReference = 41AE35FC242D7B1D00FAFD9D /* SpyFall@CityUEdition.app */;
+			productType = "com.apple.product-type.application";
+		};
+		41AE3611242D7B2400FAFD9D /* SpyFall@CityUEditionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41AE3629242D7B2400FAFD9D /* Build configuration list for PBXNativeTarget "SpyFall@CityUEditionTests" */;
+			buildPhases = (
+				41AE360E242D7B2400FAFD9D /* Sources */,
+				41AE360F242D7B2400FAFD9D /* Frameworks */,
+				41AE3610242D7B2400FAFD9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41AE3614242D7B2400FAFD9D /* PBXTargetDependency */,
+			);
+			name = "SpyFall@CityUEditionTests";
+			productName = "SpyFall@CityUEditionTests";
+			productReference = 41AE3612242D7B2400FAFD9D /* SpyFall@CityUEditionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		41AE361C242D7B2400FAFD9D /* SpyFall@CityUEditionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41AE362C242D7B2400FAFD9D /* Build configuration list for PBXNativeTarget "SpyFall@CityUEditionUITests" */;
+			buildPhases = (
+				41AE3619242D7B2400FAFD9D /* Sources */,
+				41AE361A242D7B2400FAFD9D /* Frameworks */,
+				41AE361B242D7B2400FAFD9D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41AE361F242D7B2400FAFD9D /* PBXTargetDependency */,
+			);
+			name = "SpyFall@CityUEditionUITests";
+			productName = "SpyFall@CityUEditionUITests";
+			productReference = 41AE361D242D7B2400FAFD9D /* SpyFall@CityUEditionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		41AE35F4242D7B1D00FAFD9D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = Alibi;
+				TargetAttributes = {
+					41AE35FB242D7B1D00FAFD9D = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					41AE3611242D7B2400FAFD9D = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 41AE35FB242D7B1D00FAFD9D;
+					};
+					41AE361C242D7B2400FAFD9D = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 41AE35FB242D7B1D00FAFD9D;
+					};
+				};
+			};
+			buildConfigurationList = 41AE35F7242D7B1D00FAFD9D /* Build configuration list for PBXProject "SpyFall@CityUEdition" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 41AE35F3242D7B1D00FAFD9D;
+			productRefGroup = 41AE35FD242D7B1D00FAFD9D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				41AE35FB242D7B1D00FAFD9D /* SpyFall@CityUEdition */,
+				41AE3611242D7B2400FAFD9D /* SpyFall@CityUEditionTests */,
+				41AE361C242D7B2400FAFD9D /* SpyFall@CityUEditionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		41AE35FA242D7B1D00FAFD9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41AE360C242D7B2400FAFD9D /* LaunchScreen.storyboard in Resources */,
+				41AE363A242D9A6000FAFD9D /* Assets.xcassets in Resources */,
+				41AE3607242D7B1D00FAFD9D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41AE3610242D7B2400FAFD9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41AE361B242D7B2400FAFD9D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		41AE35F8242D7B1D00FAFD9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41AE3643242DC5E200FAFD9D /* Locations.swift in Sources */,
+				41AE363C242DA8CC00FAFD9D /* Games.swift in Sources */,
+				41AE3636242D803D00FAFD9D /* GameViewController.swift in Sources */,
+				41AE3634242D7BAE00FAFD9D /* MainViewController.swift in Sources */,
+				41AE363F242DB33C00FAFD9D /* DB.swift in Sources */,
+				41AE3600242D7B1D00FAFD9D /* AppDelegate.swift in Sources */,
+				41AE3641242DBA8900FAFD9D /* Players.swift in Sources */,
+				414F75C0242E1E1E00855F1D /* myButton.swift in Sources */,
+				41AE3638242D879500FAFD9D /* SettingsViewController.swift in Sources */,
+				41AE3602242D7B1D00FAFD9D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41AE360E242D7B2400FAFD9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41AE3617242D7B2400FAFD9D /* SpyFall_CityUEditionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41AE3619242D7B2400FAFD9D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41AE3622242D7B2400FAFD9D /* SpyFall_CityUEditionUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		41AE3614242D7B2400FAFD9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41AE35FB242D7B1D00FAFD9D /* SpyFall@CityUEdition */;
+			targetProxy = 41AE3613242D7B2400FAFD9D /* PBXContainerItemProxy */;
+		};
+		41AE361F242D7B2400FAFD9D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41AE35FB242D7B1D00FAFD9D /* SpyFall@CityUEdition */;
+			targetProxy = 41AE361E242D7B2400FAFD9D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		41AE3605242D7B1D00FAFD9D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41AE3606242D7B1D00FAFD9D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		41AE360A242D7B2400FAFD9D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41AE360B242D7B2400FAFD9D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		41AE3624242D7B2400FAFD9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		41AE3625242D7B2400FAFD9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		41AE3627242D7B2400FAFD9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 36QR85GP77;
+				INFOPLIST_FILE = "SpyFall@CityUEdition/Utilities/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alibi.SpyFall-CityUEdition";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		41AE3628242D7B2400FAFD9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 36QR85GP77;
+				INFOPLIST_FILE = "SpyFall@CityUEdition/Utilities/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alibi.SpyFall-CityUEdition";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		41AE362A242D7B2400FAFD9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 36QR85GP77;
+				INFOPLIST_FILE = "SpyFall@CityUEditionTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alibi.SpyFall-CityUEditionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpyFall@CityUEdition.app/SpyFall@CityUEdition";
+			};
+			name = Debug;
+		};
+		41AE362B242D7B2400FAFD9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 36QR85GP77;
+				INFOPLIST_FILE = "SpyFall@CityUEditionTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alibi.SpyFall-CityUEditionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpyFall@CityUEdition.app/SpyFall@CityUEdition";
+			};
+			name = Release;
+		};
+		41AE362D242D7B2400FAFD9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 36QR85GP77;
+				INFOPLIST_FILE = "SpyFall@CityUEditionUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alibi.SpyFall-CityUEditionUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SpyFall@CityUEdition";
+			};
+			name = Debug;
+		};
+		41AE362E242D7B2400FAFD9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 36QR85GP77;
+				INFOPLIST_FILE = "SpyFall@CityUEditionUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alibi.SpyFall-CityUEditionUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SpyFall@CityUEdition";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		41AE35F7242D7B1D00FAFD9D /* Build configuration list for PBXProject "SpyFall@CityUEdition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41AE3624242D7B2400FAFD9D /* Debug */,
+				41AE3625242D7B2400FAFD9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41AE3626242D7B2400FAFD9D /* Build configuration list for PBXNativeTarget "SpyFall@CityUEdition" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41AE3627242D7B2400FAFD9D /* Debug */,
+				41AE3628242D7B2400FAFD9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41AE3629242D7B2400FAFD9D /* Build configuration list for PBXNativeTarget "SpyFall@CityUEditionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41AE362A242D7B2400FAFD9D /* Debug */,
+				41AE362B242D7B2400FAFD9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41AE362C242D7B2400FAFD9D /* Build configuration list for PBXNativeTarget "SpyFall@CityUEditionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41AE362D242D7B2400FAFD9D /* Debug */,
+				41AE362E242D7B2400FAFD9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 41AE35F4242D7B1D00FAFD9D /* Project object */;
+}
