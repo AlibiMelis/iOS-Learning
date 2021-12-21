@@ -7,6 +7,7 @@ Applications:
 - Dream-Lister: iOS single view mobile application that stores your dreams in a beautiful list.
 - firebase-sort-data: Application that is connected to Firebase, retrieves data from Firebase and sorts it.
 - Harry-Potter-App: Stores info about Harry Potter world in CSV format and displays in a grid with search bar.
+- Learning-Playground: MY very first lines of code. Learning the basics of programming.
 - Miracle-Pill: Learning picker view to allow selection of state.
 - Notification: Learning iOS notifications.
 - Party-Rock-App: Application to show videos in a list. Learning Video view.
